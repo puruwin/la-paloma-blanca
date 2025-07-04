@@ -1,0 +1,61 @@
+---
+import type { SanityDocument } from "@sanity/client";
+import { sanityClient } from "sanity:client";
+import imageUrlBuilder from "@sanity/image-url";
+
+// Definir el tipo específico para nuestros eventos
+interface EventPost extends SanityDocument {
+  title: string;
+  slug: { current: string };
+  mainImage: any;
+  location?: string;
+  eventDate: string;
+  price?: number;
+  publishedAt: string;
+}
+
+const EVENTS_QUERY = `*[
+  _type == "eventPost"
+  && defined(slug.current)
+]|order(publishedAt desc)[0...12]{_id, title, slug, mainImage, location, eventDate, price, publishedAt}`;
+
+const eventPosts = await sanityClient.fetch<EventPost[]>(EVENTS_QUERY);
+const { projectId, dataset } = sanityClient.config();
+
+const urlFor = (source: any) =>
+  projectId && dataset ? imageUrlBuilder(sanityClient).image(source) : null;
+
+// Procesar las URLs de las imágenes en el frontmatter
+interface ProcessedEventPost extends EventPost {
+  imageUrl: string | null;
+}
+
+const processedEventPosts: ProcessedEventPost[] = eventPosts.map(
+  (eventPost) => ({
+    ...eventPost,
+    imageUrl: eventPost.mainImage
+      ? urlFor(eventPost.mainImage)?.url() || null
+      : null,
+  }),
+);
+---
+
+<main class="container mx-auto min-h-screen max-w-3xl p-8">
+  <h1 class="text-4xl font-bold mb-8">Events</h1>
+  <ul class="flex flex-col gap-y-4">
+    {
+      processedEventPosts.map((eventPost) => (
+        <li class="hover:underline">
+          <a href={`/events/${eventPost.slug.current}`}>
+            <h2 class="text-xl font-semibold">{eventPost.title}</h2>
+            <p>Fecha: {new Date(eventPost.eventDate).toLocaleDateString()}</p>
+            <p>Precio: {eventPost.price == 0 ? "Gratuito" : eventPost.price + "€"}</p>
+            {eventPost.imageUrl && (
+              <img src={eventPost.imageUrl} alt={eventPost.title} width="550" />
+            )}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</main>

@@ -1,0 +1,38 @@
+{
+  "locale": "es",
+  "headTitle": "La Paloma Blanca Entertainment | Eventos en Calpe",
+  "hero": {
+    "title": "¿Organizas un evento? Hazlo inolvidable.",
+    "subtitle": "Bodas, fiestas, eventos culturales o empresariales — tú imagínalo, nosotros lo hacemos realidad.",
+    "bullet1": "Eventos personalizados",
+    "bullet2": "Trato cercano y profesional",
+    "bullet3": "Cobertura local y regional",
+    "cta": "¡Pide tu presupuesto!"
+  },
+  "services": {
+    "title": "Servicios",
+    "babyshower": {
+      "title": "Baby Showers",
+      "text": "Creamos ambientes íntimos, dulces y con personalidad para celebrar la llegada de un nuevo miembro a la familia. Coordinamos decoración, catering temático, juegos, ambientación fotográfica y detalles personalizados. Nos adaptamos al estilo que prefieras."
+    },
+    "weddings": {
+      "title": "Bodas",
+      "text": "Diseñamos bodas a medida, desde ceremonias íntimas hasta grandes celebraciones. Cuidamos cada detalle: lugar, decoración floral, iluminación, sonido, coordinación de proveedores y desarrollo del cronograma. Queremos que tú solo vivas el día."
+    },
+    "funerals": {
+      "title": "Despedidas funerarias",
+      "text": "Ofrecemos una alternativa respetuosa y emotiva para despedir a un ser querido con armonía y belleza. Organizamos homenajes personalizados con música en vivo, ambientación floral, catering y ceremonias íntimas."
+    }
+  },
+  "about": {
+    "title": "Sobre Nosotros",
+    "paragraph1": "La Paloma Blanca nació de la pasión por celebrar. Durante más de una década hemos trabajado mano a mano con particulares, empresas y entidades públicas para organizar eventos que impactan, emocionan y se recuerdan.",
+    "paragraph2": "Nos eligen porque combinamos experiencia con sensibilidad. Porque no solo montamos estructuras, gestionamos proveedores o programamos horarios: interpretamos lo que buscas, lo que sueñas y lo que tu evento representa para ti.",
+    "whyUs": "¿Por qué elegirnos?",
+    "reasons": [
+      "Más de 15 años de experiencia en la organización de eventos nos avalan.",
+      "No improvisamos: trabajamos con planificación, pero también con intuición.",
+      "Un buen evento no se mide por el presupuesto, sino por la emoción que deja."
+    ]
+  }
+}

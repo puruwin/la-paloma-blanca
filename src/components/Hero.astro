@@ -1,0 +1,35 @@
+---
+import "../styles/index.css";
+
+const { content } = Astro.props;
+---
+
+<section class="bg-primary">
+  <div id="hero" class="mx-auto h-[100vh] bg-center relative bg-cover">
+    <div
+      class="h-full w-full bg-[#54B5DE]/70 flex gap-4 items-center justify-center text-center"
+    >
+      <div class="flex max-w-7xl flex-col gap-16 items-center justify-center">
+        <p
+          class="text-white text-2xl lg:text-4xl font-boldonse drop-shadow-lg"
+        >
+          {content.hero.title}
+        </p>
+        <img
+          src="/logo-text-w.svg"
+          alt="La Paloma Blanca Entertainment"
+          class="w-1/2 lg:w-1/3 -rotate-12"
+        />
+        <p class="text-white text-sm lg:text-base font-boldonse drop-shadow-lg">
+          {content.hero.subtitle}
+        </p>
+        <a
+          href="https://wa.me/34601677410"
+          class="bg-[#25D366] rounded-full p-2"
+        >
+          <img src="/WhatsApp.svg" alt="WhatsApp" class="w-6 h-6" />
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

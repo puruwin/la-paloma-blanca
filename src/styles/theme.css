@@ -10,6 +10,13 @@ html {
   --gray-600: #6E6E6E;
   --gray-800: #2B2B2B;
   --black: #000000;
+  --sky-blue: #54b5de;
+  --pigeon-gray: #e8eded;
+  --ash-gray: #b0b6b9;
+  --fog-blue: #d3ecf6;
+  --deep-blue: #3a8dac;
+  --candle-white: #fdf8f3;
+
 
   --text-primary: var(--gray-800);
   --text-secondary: var(--gray-600);

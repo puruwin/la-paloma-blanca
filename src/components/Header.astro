@@ -1,5 +1,7 @@
 ---
 import "../styles/global.css";
+
+const { content } = Astro.props;
 ---
 
 <header
@@ -11,7 +13,7 @@ import "../styles/global.css";
     >
       <a href="/">
         <img
-          src="/logo-paloma-blk.svg"
+          src="/logo-paloma-deep.svg"
           alt="La Paloma Blanca Entertainment"
           class="w-10 h-10"
         />
@@ -24,16 +26,19 @@ import "../styles/global.css";
           class="hidden sm:flex gap-8 font-medium font-sans h-full items-center"
         >
           <li>
-            <a href="/" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">Próximos Eventos</a>
+            <a href="/" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
+              {content.services.title}
+            </a>
           </li>
           <li>
-            <a href="/" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">Blog</a>
+            <a href="/" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
+              {content.about.title}
+            </a>
           </li>
           <li>
-            <a href="/about" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">Sobre Nosotros</a>
-          </li>
-          <li>
-            <a href="/contact" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">Contacto</a>
+            <a href="/contact" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
+              {content.contact}
+            </a>
           </li>
         </ul>
       </nav>

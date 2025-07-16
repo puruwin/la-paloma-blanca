@@ -1,0 +1,38 @@
+{
+  "locale": "en",
+  "headTitle": "La Paloma Blanca Entertainment | Events in Calpe",
+  "hero": {
+    "title": "Planning an event? Make it unforgettable.",
+    "subtitle": "Weddings, parties, cultural or corporate events — you imagine it, we make it happen.",
+    "bullet1": "Tailor-made events",
+    "bullet2": "Professional and friendly service",
+    "bullet3": "Local and regional coverage",
+    "cta": "Book now!"
+  },
+  "services": {
+    "title": "Services",
+    "babyshower": {
+      "title": "Baby Showers",
+      "text": "We create warm, intimate, and personalized atmospheres to welcome a new family member. Themed decor, catering, games, photo settings, and custom details — everything tailored to your style."
+    },
+    "weddings": {
+      "title": "Weddings",
+      "text": "We design bespoke weddings, from intimate ceremonies to large celebrations. We handle every detail: venue, floral decoration, lighting, music, vendor coordination, and event timeline. You enjoy the day — we make it flawless."
+    },
+    "funerals": {
+      "title": "Funeral Tributes",
+      "text": "We offer respectful and heartfelt alternatives to say goodbye to a loved one with harmony and beauty. Live music, floral design, catering, symbolic spaces, and personalized ceremonies are all part of our service."
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "paragraph1": "La Paloma Blanca was born from a passion for celebration. For over a decade, we've worked with individuals, businesses, and institutions to create events that leave a lasting impact.",
+    "paragraph2": "Clients choose us for our experience and emotional sensitivity. We don't just manage logistics — we interpret your vision and transform it into a meaningful and memorable experience.",
+    "whyUs": "Why choose us?",
+    "reasons": [
+      "More than 15 years of experience in organizing events.",
+      "No improvisation — we work with precision and intuition.",
+      "The value of an event is measured by its emotional impact, not its price."
+    ]
+  }
+}

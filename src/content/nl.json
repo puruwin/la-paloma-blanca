@@ -1,0 +1,38 @@
+{
+  "locale": "nl",
+  "headTitle": "La Paloma Blanca Entertainment | Eventen in Calpe",
+  "hero": {
+    "title": "Organiseer je een evenement? Maak het onvergetelijk.",
+    "subtitle": "Bruiloften, feesten, culturele of zakelijke evenementen — jij bedenkt het, wij maken het waar.",
+    "bullet1": "Gepersonaliseerde evenementen",
+    "bullet2": "Netwerk van betrouwbare leveranciers en institutionele contacten",
+    "bullet3": "Gespecialiseerd in Calpe en omgeving",
+    "cta": "Boek nu!"
+  },
+  "services": {
+    "title": "Diensten",
+    "babyshower": {
+      "title": "Babyshowers",
+      "text": "We creëren intieme, warme en persoonlijke sferen om de komst van een nieuw leven te vieren. Thema-decoratie, catering, spelletjes en fotomomenten worden allemaal op maat verzorgd."
+    },
+    "weddings": {
+      "title": "Bruiloften",
+      "text": "Van een romantische ceremonie tot een groots feest: we plannen en coördineren alles. Bloemen, locatie, licht, muziek, tijdslijn — jij geniet, wij regelen het."
+    },
+    "funerals": {
+      "title": "Afscheidsceremonies",
+      "text": "Een respectvol en persoonlijk afscheid, met muziek, bloemen, catering en symboliek. Een unieke viering die de essentie van je dierbare weerspiegelt, in een warme, serene sfeer."
+    }
+  },
+  "about": {
+    "title": "Over ons",
+    "paragraph1": "La Paloma Blanca ontstond uit liefde voor vieringen. Al meer dan tien jaar werken we samen met particulieren, bedrijven en overheden om evenementen te creëren die ontroeren, verbinden en bijblijven.",
+    "paragraph2": "We onderscheiden ons door ervaring én empathie. We begrijpen wat je zoekt en vertalen dat naar een event dat jouw verhaal vertelt. Dankzij onze samenwerkingen met de gemeente Calpe en betrouwbare leveranciers kunnen we élk detail verzorgen, van techniek tot emotie.",
+    "whyUs": "Waarom kiezen voor ons?",
+    "reasons": [
+      "Meer dan 15 jaar ervaring in het organiseren van evenementen.",
+      "Geen improvisatie: we plannen met precisie en gevoel.",
+      "Emotionele impact: het gaat niet om budget, maar om beleving."
+    ]
+  }
+}

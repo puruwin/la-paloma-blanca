@@ -1,7 +1,27 @@
 ---
 import "../styles/global.css";
+import LanguageSelector from "./LanguageSelector.astro";
 
-const { content } = Astro.props;
+const { content, lang } = Astro.props;
+
+const menuItems = [
+  {
+    id: "services",
+    label: content.services.title,
+  },
+  {
+    id: "about",
+    label: content.about.title,
+  },
+  {
+    id: "how-we-work",
+    label: content.howWeWork.title,
+  },
+  {
+    id: "contact",
+    label: content.contact.title,
+  },
+];
 ---
 
 <header
@@ -25,22 +45,17 @@ const { content } = Astro.props;
         <ul
           class="hidden sm:flex gap-8 font-medium font-sans h-full items-center"
         >
-          <li>
-            <a href="/" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
-              {content.services.title}
-            </a>
-          </li>
-          <li>
-            <a href="/" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
-              {content.about.title}
-            </a>
-          </li>
-          <li>
-            <a href="/contact" class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
-              {content.contact}
-            </a>
-          </li>
+          {
+            menuItems.map((item) => (
+              <li>
+                <a href={`/${item.id}`} class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
+                  {item.label}
+                </a>
+              </li>
+            ))
+          }
         </ul>
+        <LanguageSelector lang={lang} />
       </nav>
     </div>
   </div>

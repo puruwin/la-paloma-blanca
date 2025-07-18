@@ -2,6 +2,8 @@
 import Header from '../../components/Header.astro';
 import Hero from '../../components/Hero.astro';
 import AboutUs from '../../components/AboutUs.astro';
+import Services from '../../components/Services.astro';
+import HowWeWork from '../../components/HowWeWork.astro';
 import Layout from '../../layouts/Layout.astro';
 import content from '../../content/nl.json';
 ---
@@ -9,5 +11,7 @@ import content from '../../content/nl.json';
 <Layout locale={content.locale} headTitle={content.headTitle}>
 	<Header content={content} />
 	<Hero content={content} />
+	<Services content={content} />
 	<AboutUs content={content} />
+	<HowWeWork content={content} />
 </Layout>

@@ -1,0 +1,69 @@
+---
+const languages = [
+  { code: "es", name: "Español", flag: "/flags/es.svg", path: "/es/" },
+  { code: "en", name: "English", flag: "/flags/en.svg", path: "/en/" },
+  { code: "nl", name: "Nederlands", flag: "/flags/nl.svg", path: "/nl/" },
+];
+---
+
+<div class="relative inline-block ml-6 text-left language-selector-dropdown">
+  <button
+    id="lang-toggle"
+    type="button"
+    class="inline-flex justify-center w-full px-4 py-2 items-center hover:cursor-pointer"
+  >
+    <img
+      src={`/flags/${Astro.currentLocale}.svg`}
+      alt="Idioma actual"
+      class="w-6 h-6"
+    />
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+      ><path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 9l-7 7-7-7"></path></svg
+    >
+  </button>
+  <div
+    id="lang-menu"
+    class="hidden origin-top-right w-20 absolute right-0 mt-2 rounded-md shadow-lg bg-white z-10 text-right"
+  >
+    <div class="py-1">
+      {
+        languages.map(
+          (lang) =>
+            lang.code !== Astro.currentLocale && (
+              <button
+                class="w-full hover:cursor-pointer flex items-center justify-end px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                data-path={lang.path}
+              >
+                {lang.code.toUpperCase()}
+                <img src={lang.flag} alt={lang.name} class="w-6 h-6 ml-2" />
+              </button>
+            ),
+        )
+      }
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  const toggle = document.getElementById("lang-toggle");
+  const menu = document.getElementById("lang-menu");
+  toggle.addEventListener("click", (e) => {
+    e.stopPropagation();
+    menu.classList.toggle("hidden");
+  });
+  document.querySelectorAll("#lang-menu button").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      window.location.href = btn.dataset.path;
+    });
+  });
+  document.addEventListener("click", (e) => {
+    const dropdown = document.querySelector(".language-selector-dropdown");
+    if (dropdown && !dropdown.contains(e.target)) {
+      menu.classList.add("hidden");
+    }
+  });
+</script>

@@ -1,0 +1,22 @@
+---
+const { content } = Astro.props;
+---
+
+<section class="max-w-7xl mx-auto my-16 px-4">
+  <h2 class="text-3xl font-bold mb-8 text-center">{content.howWeWork.title}</h2>
+  <div class="grid md:grid-cols-3 gap-8">
+    {
+      content.howWeWork.steps.map((step: any) => (
+        <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center">
+          <img
+            src={step.image}
+            alt={step.title}
+            class="h-12 w-12 rounded-lg mb-4"
+          />
+          <h3 class="text-xl font-semibold mb-2">{step.title}</h3>
+          <p class="text-gray-700">{step.text}</p>
+        </div>
+      ))
+    }
+  </div>
+</section>

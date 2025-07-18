@@ -1,8 +1,6 @@
 ---
-
+import { locales } from "../config/locales";
 ---
-
-// redirecting to the default locale
-<p class="mt-12 text-center text-lg text-gray-700 font-sans">
-	Redirecting to the default language... Please wait.
-</p>
+<script>
+	window.location.href = navigator.language.split("-")[0] || "/nl";
+</script>

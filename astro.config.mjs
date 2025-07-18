@@ -2,6 +2,7 @@
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
 import 'dotenv/config'
+import { locales } from './src/config/locales';
 
 import sanity from '@sanity/astro';
 
@@ -9,10 +10,10 @@ import sanity from '@sanity/astro';
 export default defineConfig({
   i18n: {
     defaultLocale: "nl",
-    locales: ["nl", "es", "en"],
-    routing: {
-      prefixDefaultLocale: true,
-    }
+    locales: locales,
+    // routing: {
+    //   prefixDefaultLocale: true,
+    // }
   },
 
   vite: {

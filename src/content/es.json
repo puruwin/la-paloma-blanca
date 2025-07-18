@@ -13,14 +13,17 @@
     "title": "Servicios",
     "babyshower": {
       "title": "Baby Showers",
+      "image": "/services/baby-shower.webp",
       "text": "Creamos ambientes íntimos, dulces y con personalidad para celebrar la llegada de un nuevo miembro a la familia. Coordinamos decoración, catering temático, juegos, ambientación fotográfica y detalles personalizados. Nos adaptamos al estilo que prefieras."
     },
     "weddings": {
       "title": "Bodas",
+      "image": "/services/wedding.webp",
       "text": "Diseñamos bodas a medida, desde ceremonias íntimas hasta grandes celebraciones. Cuidamos cada detalle: lugar, decoración floral, iluminación, sonido, coordinación de proveedores y desarrollo del cronograma. Queremos que tú solo vivas el día."
     },
     "funerals": {
       "title": "Despedidas funerarias",
+      "image": "/services/funeral.webp",
       "text": "Ofrecemos una alternativa respetuosa y emotiva para despedir a un ser querido con armonía y belleza. Organizamos homenajes personalizados con música en vivo, ambientación floral, catering y ceremonias íntimas."
     }
   },
@@ -34,5 +37,51 @@
       "No improvisamos: trabajamos con planificación, pero también con intuición.",
       "Un buen evento no se mide por el presupuesto, sino por la emoción que deja."
     ]
+  },
+  "howWeWork": {
+    "title": "Cómo trabajamos",
+    "steps": [
+      {
+        "title": "Escucha activa",
+        "image": "/how-we-work/listen.webp",
+        "text": "Hacemos preguntas, escuchamos atentamente y entendemos lo que buscas."
+      },
+      {
+        "title": "Propuesta personalizada",
+        "image": "/how-we-work/proposal.webp",
+        "text": "Creamos un concepto que se adapta a lo que quieres lograr."
+      },
+      {
+        "title": "Coordinación integral",
+        "image": "/how-we-work/coordination.webp",
+        "text": "Gestionamos proveedores, permisos, montaje y cronogramas."
+      },
+      {
+        "title": "Ejecución impecable",
+        "image": "/how-we-work/execution.webp",
+        "text": "Supervisamos todo para que tú solo disfrutes."
+      },
+      {
+        "title": "Cierre con feedback",
+        "image": "/how-we-work/feedback.webp",
+        "text": "Queremos saber cómo te sentiste, qué te encantó y cómo podemos mejorar."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "description": "¿Tienes una idea? ¿Una fecha? ¿Un lugar? Cuéntanos todo.",
+    "phone": "Teléfono / WhatsApp",
+    "email": "Correo electrónico",
+    "location": "Oficinas en Calpe",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "eventType": "Tipo de evento",
+      "date": "Fecha estimada",
+      "message": "Mensaje",
+      "submit": "Enviar solicitud"
+    },
+    "cta": "Tu evento empieza con una conversación."
   }
 }

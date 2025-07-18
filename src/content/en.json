@@ -13,14 +13,17 @@
     "title": "Services",
     "babyshower": {
       "title": "Baby Showers",
+      "image": "/services/baby-shower.webp",
       "text": "We create warm, intimate, and personalized atmospheres to welcome a new family member. Themed decor, catering, games, photo settings, and custom details — everything tailored to your style."
     },
     "weddings": {
-      "title": "Weddings",
+      "title": "Weddings",  
+      "image": "/services/wedding.webp",
       "text": "We design bespoke weddings, from intimate ceremonies to large celebrations. We handle every detail: venue, floral decoration, lighting, music, vendor coordination, and event timeline. You enjoy the day — we make it flawless."
     },
     "funerals": {
       "title": "Funeral Tributes",
+      "image": "/services/funeral.webp",
       "text": "We offer respectful and heartfelt alternatives to say goodbye to a loved one with harmony and beauty. Live music, floral design, catering, symbolic spaces, and personalized ceremonies are all part of our service."
     }
   },
@@ -34,5 +37,51 @@
       "No improvisation — we work with precision and intuition.",
       "The value of an event is measured by its emotional impact, not its price."
     ]
+  },
+  "howWeWork": {
+    "title": "How We Work",
+    "steps": [
+      {
+        "title": "Active listening",
+        "image": "/how-we-work/listen.webp",
+        "text": "We ask questions, listen carefully, and understand what you're looking for."
+      },
+      {
+        "title": "Personalized proposal",
+        "image": "/how-we-work/proposal.webp",
+        "text": "We create a concept that fits exactly what you want to achieve."
+      },
+      {
+        "title": "Full coordination",
+        "image": "/how-we-work/coordination.webp",
+        "text": "We manage suppliers, permits, setup, and scheduling."
+      },
+      {
+        "title": "Flawless execution",
+        "image": "/how-we-work/execution.webp",
+        "text": "We oversee everything on the day of the event so you can just enjoy."
+      },
+      {
+        "title": "Post-event feedback",
+        "image": "/how-we-work/feedback.webp",
+        "text": "We want to know how you felt, what you loved, and how we can improve."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "Do you have an idea? A date? A location? Tell us everything.",
+    "phone": "Phone / WhatsApp",
+    "email": "Email",
+    "location": "Offices in Calpe",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "eventType": "Type of event",
+      "date": "Estimated date",
+      "message": "Message",
+      "submit": "Send request"
+    },
+    "cta": "Your event starts with a conversation."
   }
 }

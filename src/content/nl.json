@@ -13,14 +13,17 @@
     "title": "Diensten",
     "babyshower": {
       "title": "Babyshowers",
+      "image": "/services/baby-shower.webp",
       "text": "We creëren intieme, warme en persoonlijke sferen om de komst van een nieuw leven te vieren. Thema-decoratie, catering, spelletjes en fotomomenten worden allemaal op maat verzorgd."
     },
     "weddings": {
       "title": "Bruiloften",
+      "image": "/services/wedding.webp",
       "text": "Van een romantische ceremonie tot een groots feest: we plannen en coördineren alles. Bloemen, locatie, licht, muziek, tijdslijn — jij geniet, wij regelen het."
     },
     "funerals": {
       "title": "Afscheidsceremonies",
+      "image": "/services/funeral.webp",
       "text": "Een respectvol en persoonlijk afscheid, met muziek, bloemen, catering en symboliek. Een unieke viering die de essentie van je dierbare weerspiegelt, in een warme, serene sfeer."
     }
   },
@@ -34,5 +37,51 @@
       "Geen improvisatie: we plannen met precisie en gevoel.",
       "Emotionele impact: het gaat niet om budget, maar om beleving."
     ]
+  },
+  "howWeWork": {
+    "title": "Hoe we werken",
+    "steps": [
+      {
+        "title": "Actief luisteren",
+        "image": "/how-we-work/listen.webp",
+        "text": "We praten met je, begrijpen je idee, stijl en doel."
+      },
+      {
+        "title": "Persoonlijk voorstel",
+        "image": "/how-we-work/proposal.webp",
+        "text": "We creëren een concept dat perfect aansluit bij jouw wensen."
+      },
+      {
+        "title": "Volledige coördinatie",
+        "image": "/how-we-work/coordination.webp",
+        "text": "We regelen leveranciers, vergunningen, opbouw en tijdsplanning."
+      },
+      {
+        "title": "Vlekkeloze uitvoering",
+        "image": "/how-we-work/execution.webp",
+        "text": "We houden alles onder controle op de dag zelf zodat jij alleen hoeft te genieten."
+      },
+      {
+        "title": "Afronding met feedback",
+        "image": "/how-we-work/feedback.webp",
+        "text": "We horen graag hoe je het hebt ervaren en wat we kunnen verbeteren."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Neem contact met ons op",
+    "description": "Heb je een idee? Een datum? Een locatie? Vertel het ons allemaal.",
+    "phone": "Telefoon / WhatsApp",
+    "email": "E-mail",
+    "location": "Kantoor in Calpe",
+    "form": {
+      "name": "Naam",
+      "email": "E-mail",
+      "eventType": "Type evenement",
+      "date": "Geschatte datum",
+      "message": "Bericht",
+      "submit": "Verzoek verzenden"
+    },
+    "cta": "Jouw evenement begint met een gesprek."
   }
 }

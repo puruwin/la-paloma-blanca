@@ -1,6 +1,17 @@
 {
   "locale": "es",
   "headTitle": "La Paloma Blanca Entertainment | Eventos en Calpe",
+  "navigation": {
+    "title": "Navegación",
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre Nosotros",
+    "howWeWork": "Cómo trabajamos",
+    "contact": "Contacto"
+  },
+  "social": {
+    "title": "Síguenos"
+  },
   "hero": {
     "title": "¿Organizas un evento? Hazlo inolvidable.",
     "subtitle": "Bodas, fiestas, eventos culturales o empresariales — tú imagínalo, nosotros lo hacemos realidad.",
@@ -74,14 +85,10 @@
     "phone": "Teléfono / WhatsApp",
     "email": "Correo electrónico",
     "location": "Oficinas en Calpe",
-    "form": {
-      "name": "Nombre",
-      "email": "Correo electrónico",
-      "eventType": "Tipo de evento",
-      "date": "Fecha estimada",
-      "message": "Mensaje",
-      "submit": "Enviar solicitud"
-    },
     "cta": "Tu evento empieza con una conversación."
+  },
+  "footer": {
+    "copyright": "Todos los derechos reservados",
+    "developedBy": "Desarrollado con 💙 por "
   }
 }

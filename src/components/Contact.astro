@@ -1,0 +1,46 @@
+---
+const contact = {
+  title: "Contáctanos",
+  description: "¿Tienes una idea? ¿Una fecha? ¿Un lugar? Cuéntanos todo.",
+  phone: "Teléfono / WhatsApp",
+  phoneNumber: "+34 601 677 410", // Sustituye por el número real si lo tienes
+  email: "info@lapalomablanca.es", // Sustituye por el email real si lo tienes
+  location: "Oficinas en Calpe",
+  cta: "Tu evento empieza con una conversación.",
+};
+---
+
+<section
+  id="contact" class="max-w-7xl mx-auto my-16 px-4 text-center sm:h-1/3 flex flex-col items-center justify-around"
+>
+  <h2 class="text-3xl font-bold mb-4">{contact.title}</h2>
+  <div class="mb-4">
+    <p class="mb-6 text-gray-700">{contact.description}</p>
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <span class="font-semibold">{contact.phone}:</span>
+      <a
+        href={`tel:${contact.phoneNumber}`}
+        class="text-blue-600 hover:underline">{contact.phoneNumber}</a
+      >
+      <a
+        href={`https://wa.me/${contact.phoneNumber.replace(/\D/g, "")}`}
+        target="_blank"
+        rel="noopener"
+        class="ml-2"
+      >
+        <img
+          src="/WhatsApp.svg"
+          alt="WhatsApp"
+          class="inline w-6 h-6 align-middle"
+        />
+      </a>
+    </div>
+    <div class="flex items-center justify-center gap-2 mb-2">
+      <span class="font-semibold">Correo electrónico:</span>
+      <a href={`mailto:${contact.email}`} class="text-blue-600 hover:underline"
+        >{contact.email}</a
+      >
+    </div>
+  </div>
+  <p class="mt-6 text-lg text-gray-800 font-medium">{contact.cta}</p>
+</section>

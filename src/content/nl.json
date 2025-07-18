@@ -1,6 +1,17 @@
 {
   "locale": "nl",
   "headTitle": "La Paloma Blanca Entertainment | Eventen in Calpe",
+  "navigation": {
+    "title": "Navigatie",
+    "home": "Home",
+    "services": "Diensten",
+    "about": "Over ons",
+    "howWeWork": "Hoe we werken",
+    "contact": "Contact"
+  },
+  "social": {
+    "title": "Volg ons"
+  },
   "hero": {
     "title": "Organiseer je een evenement? Maak het onvergetelijk.",
     "subtitle": "Bruiloften, feesten, culturele of zakelijke evenementen — jij bedenkt het, wij maken het waar.",
@@ -83,5 +94,9 @@
       "submit": "Verzoek verzenden"
     },
     "cta": "Jouw evenement begint met een gesprek."
+  },
+  "footer": {
+    "copyright": "Alle rechten voorbehouden",
+    "developedBy": "Ontwikkeld met 💙 door "
   }
 }

@@ -10,7 +10,7 @@ const menuItems = [
     label: content.services.title,
   },
   {
-    id: "about",
+    id: "about-us",
     label: content.about.title,
   },
   {
@@ -41,14 +41,22 @@ const menuItems = [
     </div>
     <div class="col-start-3 flex justify-end">
       <nav class="h-full flex items-center">
-        <button class="sm:hidden text-2xl p-2 text-default">☰</button>
+        <button
+          id="menu-toggle"
+          class="sm:hidden text-2xl p-2 text-default"
+          aria-label="Abrir menú">☰</button
+        >
         <ul
-          class="hidden sm:flex gap-8 font-medium font-sans h-full items-center"
+          id="main-menu"
+          class="hidden sm:flex flex-col sm:flex-row absolute min-h-12 sm:static top-12 right-4 bg-white sm:bg-transparent border sm:border-0 rounded sm:rounded-none shadow-lg sm:shadow-none p-4 sm:p-0 z-50 font-medium font-sans items-center gap-8"
         >
           {
             menuItems.map((item) => (
               <li>
-                <a href={`/${item.id}`} class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap">
+                <a
+                  href={`#${item.id}`}
+                  class="text-[var(--text-primary)] hover:text-[var(--text-secondary)] whitespace-nowrap block py-2 px-4 menu-link"
+                >
                   {item.label}
                 </a>
               </li>
@@ -60,3 +68,30 @@ const menuItems = [
     </div>
   </div>
 </header>
+
+<script is:inline>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");
+    const menu = document.getElementById("main-menu");
+    if (toggle && menu) {
+      toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        menu.classList.toggle("hidden");
+      });
+      document.querySelectorAll(".menu-link").forEach((link) => {
+        link.addEventListener("click", () => {
+          menu.classList.add("hidden");
+        });
+      });
+      document.addEventListener("click", (e) => {
+        if (
+          !menu.classList.contains("hidden") &&
+          !menu.contains(e.target) &&
+          e.target !== toggle
+        ) {
+          menu.classList.add("hidden");
+        }
+      });
+    }
+  });
+</script>

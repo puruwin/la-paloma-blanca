@@ -1,6 +1,17 @@
 {
   "locale": "en",
   "headTitle": "La Paloma Blanca Entertainment | Events in Calpe",
+  "navigation": {
+    "title": "Navigation",
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "howWeWork": "How We Work",
+    "contact": "Contact"
+  },
+  "social": {
+    "title": "Follow Us"
+  },
   "hero": {
     "title": "Planning an event? Make it unforgettable.",
     "subtitle": "Weddings, parties, cultural or corporate events — you imagine it, we make it happen.",
@@ -83,5 +94,9 @@
       "submit": "Send request"
     },
     "cta": "Your event starts with a conversation."
+  },
+  "footer": {
+    "copyright": "All rights reserved",
+    "developedBy": "Developed with 💙 by "
   }
 }

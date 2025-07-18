@@ -1,0 +1,113 @@
+---
+const { content } = Astro.props;
+
+const menuItems = [
+  {
+    id: "services",
+    label: content.services.title,
+  },
+  {
+    id: "about-us",
+    label: content.about.title,
+  },
+  {
+    id: "how-we-work",
+    label: content.howWeWork.title,
+  },
+  {
+    id: "contact",
+    label: content.contact.title,
+  },
+];
+
+const socialLinks = [
+  {
+    name: "Facebook",
+    url: "https://www.facebook.com/groups/1007966568115937",
+    icon: "/Facebook.svg",
+  },
+  { name: "WhatsApp", url: "https://wa.me/34601677410", icon: "/WhatsApp.svg" },
+];
+
+const contact = {
+  phone: "+34 601 677 410",
+  email: "info@lapalomablanca.es",
+};
+---
+
+<footer class="bg-gray-900 text-gray-100 py-12 mt-16">
+  <div
+    class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8 items-center"
+  >
+    <!-- Logo -->
+    <div class="flex flex-col items-center md:items-start mb-8 md:mb-0">
+      <img
+        src="/logo-text-w.svg"
+        alt="La Paloma Blanca logo"
+        class="w-32"
+      />
+    </div>
+    <!-- Navegación -->
+    <nav class="flex flex-col items-center md:items-start gap-2">
+      <span class="font-semibold mb-2">
+        {content.navigation.title}
+      </span>
+      <a href="/" class="hover:underline hover:text-blue-300">
+        {content.navigation.home}
+      </a>
+      {
+        menuItems.map((item) => (
+          <a href={`#${item.id}`} class="hover:underline hover:text-blue-300">
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+    <!-- Contacto -->
+    <div class="flex flex-col items-center md:items-start gap-2">
+      <span class="font-semibold mb-2">
+        {content.contact.title}
+      </span>
+      <a href="tel:+34601677410" class="hover:underline">{contact.phone}</a>
+      <a href="mailto:info@lapalomablanca.es" class="hover:underline"
+        >{contact.email}</a
+      >
+    </div>
+    <!-- Redes sociales -->
+    <div class="flex flex-col items-center md:items-end gap-2">
+      <span class="font-semibold mb-2">
+        {content.social.title}
+      </span>
+      <div class="flex gap-4">
+        {
+          socialLinks.map((social) => (
+            <a
+              href={social.url}
+              target="_blank"
+              rel="noopener"
+              aria-label={social.name}
+              class="hover:opacity-80"
+            >
+              <img src={social.icon} alt={social.name} class="w-7 h-7" />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <div
+    class="mt-10 border-t border-gray-700 pt-6 text-center text-sm flex flex-col md:flex-row justify-between items-center max-w-7xl mx-auto px-4"
+  >
+    <span
+      >&copy; {new Date().getFullYear()} La Paloma Blanca. {content.footer.copyright}</span
+    >
+    <div class="flex items-center gap-2 mt-2">
+      {content.footer.developedBy} <a
+      href="https://creativefrappe.com/card"
+      target="_blank"
+      rel="noopener"
+      class="hover:underline text-[#F5478F] font-bold hover:text-[#29C1F1]">Frappé</a
+      >
+    </div>
+  </div>
+</footer>

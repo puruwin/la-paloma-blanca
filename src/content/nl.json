@@ -1,6 +1,76 @@
 {
-  "locale": "nl",
-  "headTitle": "La Paloma Blanca Entertainment | Eventen in Calpe",
+  "seo": {
+    "head": {
+      "title": "Evenementenorganisatie in Calpe | La Paloma Blanca",
+      "description": "Wij organiseren bruiloften, babyshowers, feesten en herdenkingen in Calpe. Volledige service, warme sfeer en een vlekkeloze uitvoering.",
+      "ogDescription": "Persoonlijke en professionele evenementen in Calpe. Vraag nu je offerte aan.",
+      "ogType": "website",
+      "ogImage": "https://lapalomablanca.es/logo-paloma-deep.svg",
+      "ogUrl": "https://lapalomablanca.es/nl/",
+      "twitterDescription": "Van bruiloft tot herdenking: wij zorgen voor alles. Neem contact op voor een onvergetelijk evenement.",
+      "twitterCard": "summary_large_image",
+      "twitterImage": "https://lapalomablanca.es/logo-paloma-deep.svg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "La Paloma Blanca",
+      "alternateName": "La Paloma Blanca Entertainment",
+      "url": "https://lapalomablanca.es/nl/",
+      "logo": "https://lapalomablanca.es/logo-paloma-deep.svg",
+      "description": "Experts in het organiseren van evenementen en feesten in Calpe: bruiloften, babyshowers, privéfeesten, culturele evenementen en herdenkingsceremonies. Maatwerk van A tot Z.",
+      "areaServed": {
+        "@type": "Place",
+        "name": [
+          "Calpe",
+          "Altea",
+          "Benidorm",
+          "Denia",
+          "Valenciaanse Gemeenschap"
+        ]
+      },
+      "telephone": "+34 601 677 410",
+      "email": "info@lapalomablanca.es",
+      "sameAs": [
+        "https://www.facebook.com/groups/1007966568115937/"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Thom Marysse"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Bruiloften",
+          "description": "Volledige service voor bruiloften op maat in Calpe en omgeving."
+        },
+        {
+          "@type": "Offer",
+          "name": "Babyshowers",
+          "description": "Thema-decoratie, catering en sfeer voor unieke babyshowers."
+        },
+        {
+          "@type": "Offer",
+          "name": "Herdenkingsceremonies",
+          "description": "Persoonlijke en respectvolle afscheidsvieringen met muziek, bloemen en catering."
+        }
+      ]
+    }
+  },
   "navigation": {
     "title": "Navigatie",
     "home": "Home",

@@ -1,6 +1,76 @@
 {
-  "locale": "es",
-  "headTitle": "La Paloma Blanca Entertainment | Eventos en Calpe",
+  "seo": {
+    "head": {
+      "title": "Organización de eventos y fiestas en Calpe | La Paloma Blanca",
+      "description": "Expertos en organización de eventos en Calpe: bodas, baby showers, fiestas, eventos culturales y homenajes personalizados. Creamos experiencias inolvidables.",
+      "ogDescription": "Crea tu evento perfecto con La Paloma Blanca. Coordinación completa, proveedores de confianza y resultados memorables en Calpe y alrededores.",
+      "ogType": "website",
+      "ogImage": "https://lapalomablanca.es/logo-paloma-deep.svg",
+      "ogUrl": "https://lapalomablanca.es/es/",
+      "twitterDescription": "Organizamos bodas, fiestas y eventos únicos en Calpe. Atención personalizada y experiencia real.",
+      "twitterCard": "summary_large_image",
+      "twitterImage": "https://lapalomablanca.es/logo-paloma-deep.svg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "La Paloma Blanca",
+      "alternateName": "La Paloma Blanca Entertainment",
+      "url": "https://lapalomablanca.es/es/",
+      "logo": "https://lapalomablanca.es/logo-paloma-deep.svg",
+      "description": "Expertos en organización de eventos y fiestas en Calpe: bodas, baby showers, fiestas privadas, eventos culturales y despedidas funerarias. Servicios a medida.",
+      "areaServed": {
+        "@type": "Place",
+        "name": [
+          "Calpe",
+          "Altea",
+          "Benidorm",
+          "Denia",
+          "Comunidad Valenciana"
+        ]
+      },
+      "telephone": "+34 601 677 410",
+      "email": "info@lapalomablanca.es",
+      "sameAs": [
+        "https://www.facebook.com/groups/1007966568115937/"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Thom Marysse"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Organización de bodas",
+          "description": "Servicio completo de planificación de bodas personalizadas en Calpe y alrededores."
+        },
+        {
+          "@type": "Offer",
+          "name": "Baby Showers",
+          "description": "Decoración temática, catering y ambientación para baby showers únicos."
+        },
+        {
+          "@type": "Offer",
+          "name": "Despedidas funerarias",
+          "description": "Homenajes personalizados con música, decoración y catering para despedidas respetuosas y memorables."
+        }
+      ]
+    }
+  },
   "navigation": {
     "title": "Navegación",
     "home": "Inicio",

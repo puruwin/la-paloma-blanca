@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /$
+Disallow: /?*
+
+Allow: /es/
+Allow: /en/
+Allow: /nl/
+
+Sitemap: https://lapalomablanca.es/sitemap.xml

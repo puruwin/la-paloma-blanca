@@ -1,5 +1,5 @@
 ---
-const { locale, headTitle } = Astro.props;
+const { locale } = Astro.props;
 ---
 
 <!doctype html>
@@ -8,11 +8,12 @@ const { locale, headTitle } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="canonical" href={`https://lapalomablanca.es/${locale}/`} />
 		<meta name="generator" content={Astro.generator} />
-		<title>{headTitle}</title>
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");
 		</style>
+		<slot name="head" />
 	</head>
 	<body class="h-100vh overflow-x-hidden bg-default text-default text-base">
 		<slot />

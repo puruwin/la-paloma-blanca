@@ -1,6 +1,76 @@
 {
-  "locale": "en",
-  "headTitle": "La Paloma Blanca Entertainment | Events in Calpe",
+  "seo": {
+    "head": {
+      "title": "Event Planning in Calpe | La Paloma Blanca",
+      "description": "Professional event planners in Calpe for weddings, baby showers, parties, and funeral tributes. Tailored services, lasting memories.",
+      "ogDescription": "Create unforgettable events in Calpe with our expert team. Full coordination and personalized attention.",
+      "ogType": "website",
+      "ogImage": "https://lapalomablanca.es/logo-paloma-deep.svg",
+      "ogUrl": "https://lapalomablanca.es/en/",
+      "twitterDescription": "Tailor-made events in Calpe: weddings, parties, and more. Get your quote now.",
+      "twitterCard": "summary_large_image",
+      "twitterImage": "https://lapalomablanca.es/logo-paloma-deep.svg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "La Paloma Blanca",
+      "alternateName": "La Paloma Blanca Entertainment",
+      "url": "https://lapalomablanca.es/en/",
+      "logo": "https://lapalomablanca.es/logo-paloma-deep.svg",
+      "description": "Experts in event planning and celebration organization in Calpe: weddings, baby showers, private parties, cultural events, and funeral tributes. Tailor-made services.",
+      "areaServed": {
+        "@type": "Place",
+        "name": [
+          "Calpe",
+          "Altea",
+          "Benidorm",
+          "Denia",
+          "Valencian Community"
+        ]
+      },
+      "telephone": "+34 601 677 410",
+      "email": "info@lapalomablanca.es",
+      "sameAs": [
+        "https://www.facebook.com/groups/1007966568115937/"
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Thom Marysse"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      ],
+      "makesOffer": [
+        {
+          "@type": "Offer",
+          "name": "Wedding Planning",
+          "description": "Full service personalized wedding planning in Calpe and nearby."
+        },
+        {
+          "@type": "Offer",
+          "name": "Baby Showers",
+          "description": "Themed decoration, catering, and setup for unique baby shower celebrations."
+        },
+        {
+          "@type": "Offer",
+          "name": "Funeral Tributes",
+          "description": "Respectful and customized farewell ceremonies with live music, floral decoration, and catering."
+        }
+      ]
+    }
+  },
   "navigation": {
     "title": "Navigation",
     "home": "Home",
@@ -28,7 +98,7 @@
       "text": "We create warm, intimate, and personalized atmospheres to welcome a new family member. Themed decor, catering, games, photo settings, and custom details — everything tailored to your style."
     },
     "weddings": {
-      "title": "Weddings",  
+      "title": "Weddings",
       "image": "/services/wedding.webp",
       "text": "We design bespoke weddings, from intimate ceremonies to large celebrations. We handle every detail: venue, floral decoration, lighting, music, vendor coordination, and event timeline. You enjoy the day — we make it flawless."
     },

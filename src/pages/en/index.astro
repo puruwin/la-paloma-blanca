@@ -1,21 +1,44 @@
 ---
-import Header from '../../components/Header.astro';
-import Hero from '../../components/Hero.astro';
-import AboutUs from '../../components/AboutUs.astro';
-import Services from '../../components/Services.astro';
-import HowWeWork from '../../components/HowWeWork.astro';
-import Contact from '../../components/Contact.astro';
-import Footer from '../../components/Footer.astro';
-import Layout from '../../layouts/Layout.astro';
-import content from '../../content/en.json';
+import Header from "../../components/Header.astro";
+import Hero from "../../components/Hero.astro";
+import AboutUs from "../../components/AboutUs.astro";
+import Services from "../../components/Services.astro";
+import HowWeWork from "../../components/HowWeWork.astro";
+import Contact from "../../components/Contact.astro";
+import Footer from "../../components/Footer.astro";
+import Layout from "../../layouts/Layout.astro";
+import content from "../../content/en.json";
+
+const head = content.seo.head;
+const jsonLd = JSON.stringify(content.seo.jsonLd);
 ---
 
-<Layout locale={content.locale} headTitle={content.headTitle}>
-	<Header content={content} />
+<Layout locale={Astro.currentLocale}>
+	<Fragment slot="head">
+		<title>{head.title}</title>
+		<meta name="description" content={head.description} />
+
+		<!-- Open Graph -->
+		<meta name="og:title" content={head.title} />
+		<meta name="og:description" content={head.ogDescription} />
+		<meta name="og:type" content={head.ogType} />
+		<meta name="og:image" content={head.ogImage} />
+		<meta name="og:url" content={head.ogUrl} />
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content={head.twitterCard} />
+		<meta name="twitter:title" content={head.title} />
+		<meta name="twitter:description" content={head.twitterDescription} />
+		<meta name="twitter:image" content={head.twitterImage} />
+
+		<!-- JSON-LD -->
+		<script type="application/ld+json" set:html={jsonLd} />
+	</Fragment>
+	<Header content={content} lang={Astro.currentLocale} />
 	<Hero content={content} />
 	<Services content={content} />
 	<AboutUs content={content} />
 	<HowWeWork content={content} />
-	<Contact />
+	<Contact content={content} />
 	<Footer content={content} />
 </Layout>

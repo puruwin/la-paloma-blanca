@@ -9,6 +9,10 @@ const { locale } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="canonical" href={`https://lapalomablanca.es/${locale}/`} />
+		<link rel="alternate" hreflang="es" href="https://lapalomablanca.es/es/" />
+		<link rel="alternate" hreflang="en" href="https://lapalomablanca.es/en/" />
+		<link rel="alternate" hreflang="nl" href="https://lapalomablanca.es/nl/" />
+		<link rel="alternate" hreflang="x-default" href="https://lapalomablanca.es/en/" />
 		<meta name="generator" content={Astro.generator} />
 		<style>
 			@import url("https://fonts.googleapis.com/css2?family=Boldonse&display=swap");

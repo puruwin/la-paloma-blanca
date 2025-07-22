@@ -25,4 +25,5 @@ export default defineConfig({
     dataset: "production",
     useCdn: false
   })],
+  output: "server",
 });
